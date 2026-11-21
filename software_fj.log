@@ -1,0 +1,49 @@
+2026-11-21 18:26:49 | INFO     | Interfaz gráfica de Software FJ iniciada correctamente.
+2026-11-21 18:26:59 | INFO     | === INICIO DE SIMULACIÓN INTEGRAL (12 OPERACIONES) ===
+2026-11-21 18:26:59 | INFO     | Cliente registrado exitosamente: [CLI-001] Laura Gómez | Doc: 10987654 | laura.gomez@empresa.com (Activo)
+2026-11-21 18:26:59 | ERROR    | [Registro Cliente] ParametroFaltanteError: [SFJ-001] El nombre del cliente no puede estar vacío.
+2026-11-21 18:26:59 | ERROR    | [Registro Cliente] DatosInvalidosError: [SFJ-002] Formato de correo electrónico inválido: 'pedro_sin_arroba.com'.
+2026-11-21 18:26:59 | INFO     | Cliente registrado exitosamente: [CLI-002] Carlos Mendoza | Doc: 20304050 | carlos.mendoza@tech.es (Activo)
+2026-11-21 18:26:59 | INFO     | Servicio creado: [SRV-001] Sala Ejecutiva Alpha | Base: $45.00/h | Sala (12 pers., con Videoconferencia) | Estado: Disponible
+2026-11-21 18:26:59 | INFO     | Servicio creado: [SRV-002] Pack Estaciones GPU | Base: $30.00/h | Equipo: Workstation RTX x3 (Gama Alta) | Estado: Disponible
+2026-11-21 18:26:59 | INFO     | Servicio creado: [SRV-003] Consultoría Arquitectura Cloud | Base: $80.00/h | Asesoría Cloud & DevOps (Senior, Presencial) | Estado: Disponible
+2026-11-21 18:26:59 | ERROR    | [Construcción Servicio (Sala)] DatosInvalidosError: [SFJ-002] La tarifa base 'tarifa_invalida' no es un valor numérico válido. | Causa encadenada: ValueError: could not convert string to float: 'tarifa_invalida'
+2026-11-21 18:26:59 | INFO     | Cálculo sobrecargado (tupla IVA+Desc) para Sala Ejecutiva Alpha: $267.89
+2026-11-21 18:26:59 | INFO     | Reserva creada: [RES-001] Cliente: Laura Gómez | Servicio: Sala Ejecutiva Alpha | 4h | Total: $267.89 | Estado: PENDIENTE
+2026-11-21 18:26:59 | INFO     | Acción 'CONFIRMAR' aplicada correctamente -> [RES-001] Cliente: Laura Gómez | Servicio: Sala Ejecutiva Alpha | 4h | Total: $267.89 | Estado: CONFIRMADA
+2026-11-21 18:26:59 | ERROR    | [Creación Reserva] ServicioNoDisponibleError: [SFJ-003] El servicio 'Sala Ejecutiva Alpha' no está disponible actualmente.
+2026-11-21 18:26:59 | ERROR    | [Creación Reserva] CalculoInconsistenteError: [SFJ-006] El porcentaje de descuento debe estar entre 0 y 99.9% (recibido: 150.0).
+2026-11-21 18:26:59 | INFO     | Reserva creada: [RES-002] Cliente: Carlos Mendoza | Servicio: Consultoría Arquitectura Cloud | 5h | Total: $707.85 | Estado: PENDIENTE
+2026-11-21 18:26:59 | INFO     | Acción 'CANCELAR' aplicada correctamente -> [RES-002] Cliente: Carlos Mendoza | Servicio: Consultoría Arquitectura Cloud | 5h | Total: $707.85 | Estado: CANCELADA
+2026-11-21 18:26:59 | ERROR    | [Acción Reserva (PROCESAR)] OperacionNoPermitidaError: [SFJ-005] Solo se pueden procesar reservas CONFIRMADAS (estado actual: 'CANCELADA').
+2026-11-21 18:26:59 | INFO     | Acción 'PROCESAR' aplicada correctamente -> [RES-001] Cliente: Laura Gómez | Servicio: Sala Ejecutiva Alpha | 4h | Total: $267.89 | Estado: PROCESADA
+2026-11-21 18:26:59 | INFO     | === FIN DE SIMULACIÓN | Exitosas: 6 | Errores Controlados: 6 ===
+2026-11-21 18:28:24 | ERROR    | [Registro Cliente] DatosInvalidosError: [SFJ-002] Formato de correo electrónico inválido: 'cccc@gmail'.
+2026-11-21 18:28:44 | ERROR    | [Registro Cliente] DatosInvalidosError: [SFJ-002] Teléfono inválido ('000000'): debe contener entre 7 y 15 dígitos.
+2026-11-21 18:28:54 | INFO     | Cliente registrado exitosamente: [CLI-003] Kevin Caleb Hernandez Q | Doc: 1234567890 | cccc@gmail.com (Activo)
+2026-11-21 18:29:52 | INFO     | Interfaz gráfica de Software FJ iniciada correctamente.
+2026-11-21 18:30:02 | INFO     | === INICIO DE SIMULACIÓN INTEGRAL (12 OPERACIONES) ===
+2026-11-21 18:30:02 | INFO     | Cliente registrado exitosamente: [CLI-001] Laura Gómez | Doc: 10987654 | laura.gomez@empresa.com (Activo)
+2026-11-21 18:30:02 | ERROR    | [Registro Cliente] ParametroFaltanteError: [SFJ-001] El nombre del cliente no puede estar vacío.
+2026-11-21 18:30:02 | ERROR    | [Registro Cliente] DatosInvalidosError: [SFJ-002] Formato de correo electrónico inválido: 'pedro_sin_arroba.com'.
+2026-11-21 18:30:02 | INFO     | Cliente registrado exitosamente: [CLI-002] Carlos Mendoza | Doc: 20304050 | carlos.mendoza@tech.es (Activo)
+2026-11-21 18:30:02 | INFO     | Servicio creado: [SRV-001] Sala Ejecutiva Alpha | Base: $45.00/h | Sala (12 pers., con Videoconferencia) | Estado: Disponible
+2026-11-21 18:30:02 | INFO     | Servicio creado: [SRV-002] Pack Estaciones GPU | Base: $30.00/h | Equipo: Workstation RTX x3 (Gama Alta) | Estado: Disponible
+2026-11-21 18:30:02 | INFO     | Servicio creado: [SRV-003] Consultoría Arquitectura Cloud | Base: $80.00/h | Asesoría Cloud & DevOps (Senior, Presencial) | Estado: Disponible
+2026-11-21 18:30:02 | ERROR    | [Construcción Servicio (Sala)] DatosInvalidosError: [SFJ-002] La tarifa base 'tarifa_invalida' no es un valor numérico válido. | Causa encadenada: ValueError: could not convert string to float: 'tarifa_invalida'
+2026-11-21 18:30:03 | INFO     | Cálculo sobrecargado (tupla IVA+Desc) para Sala Ejecutiva Alpha: $267.89
+2026-11-21 18:30:03 | INFO     | Reserva creada: [RES-001] Cliente: Laura Gómez | Servicio: Sala Ejecutiva Alpha | 4h | Total: $267.89 | Estado: PENDIENTE
+2026-11-21 18:30:03 | INFO     | Acción 'CONFIRMAR' aplicada correctamente -> [RES-001] Cliente: Laura Gómez | Servicio: Sala Ejecutiva Alpha | 4h | Total: $267.89 | Estado: CONFIRMADA
+2026-11-21 18:30:03 | ERROR    | [Creación Reserva] ServicioNoDisponibleError: [SFJ-003] El servicio 'Sala Ejecutiva Alpha' no está disponible actualmente.
+2026-11-21 18:30:03 | ERROR    | [Creación Reserva] CalculoInconsistenteError: [SFJ-006] El porcentaje de descuento debe estar entre 0 y 99.9% (recibido: 150.0).
+2026-11-21 18:30:03 | INFO     | Reserva creada: [RES-002] Cliente: Carlos Mendoza | Servicio: Consultoría Arquitectura Cloud | 5h | Total: $707.85 | Estado: PENDIENTE
+2026-11-21 18:30:03 | INFO     | Acción 'CANCELAR' aplicada correctamente -> [RES-002] Cliente: Carlos Mendoza | Servicio: Consultoría Arquitectura Cloud | 5h | Total: $707.85 | Estado: CANCELADA
+2026-11-21 18:30:03 | ERROR    | [Acción Reserva (PROCESAR)] OperacionNoPermitidaError: [SFJ-005] Solo se pueden procesar reservas CONFIRMADAS (estado actual: 'CANCELADA').
+2026-11-21 18:30:03 | INFO     | Acción 'PROCESAR' aplicada correctamente -> [RES-001] Cliente: Laura Gómez | Servicio: Sala Ejecutiva Alpha | 4h | Total: $267.89 | Estado: PROCESADA
+2026-11-21 18:30:03 | INFO     | === FIN DE SIMULACIÓN | Exitosas: 6 | Errores Controlados: 6 ===
+2026-11-21 18:31:23 | ERROR    | [Construcción Servicio (Equipo)] DatosInvalidosError: [SFJ-002] La tarifa base 'jjj' no es un valor numérico válido. | Causa encadenada: ValueError: could not convert string to float: 'jjj'
+2026-11-21 18:31:42 | INFO     | Servicio creado: [SRV-004] Prueba001 | Base: $500.00/h | Equipo: TipoTest x2 (Gama Alta) | Estado: Disponible
+2026-11-21 18:32:20 | ERROR    | [Acción Reserva (CANCELAR)] OperacionNoPermitidaError: [SFJ-005] No es posible cancelar una reserva en estado 'PROCESADA'.
+2026-11-21 18:32:36 | ERROR    | [Acción Reserva (PROCESAR)] OperacionNoPermitidaError: [SFJ-005] Solo se pueden procesar reservas CONFIRMADAS (estado actual: 'CANCELADA').
+2026-11-21 18:32:55 | INFO     | Reserva creada: [RES-003] Cliente: Laura Gómez | Servicio: Prueba001 | 2h | Total: $3025.00 | Estado: PENDIENTE
+2026-11-21 18:32:59 | INFO     | Acción 'CANCELAR' aplicada correctamente -> [RES-003] Cliente: Laura Gómez | Servicio: Prueba001 | 2h | Total: $3025.00 | Estado: CANCELADA
